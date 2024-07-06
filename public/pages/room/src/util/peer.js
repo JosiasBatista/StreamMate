@@ -36,7 +36,7 @@ class PeerBuilder {
   }
 
   build() {
-    const peer = new PeerBuilder(...this.peerConfig);
+    const peer = new Peer(...this.peerConfig);
 
     peer.on('error', this.onError);
     peer.on('call', this._prepareCallEvent.bind(this));

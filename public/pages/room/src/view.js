@@ -43,4 +43,10 @@ class View {
     const videoGrid = document.getElementById('video-grid')
     videoGrid.append(div)
   }
+
+  setParticipants(count) {
+    const myself = 1
+    const participantsEl = document.getElementById('participants')
+    participantsEl.innerHTML = (count + myself)
+  }
 }
